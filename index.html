@@ -20,7 +20,7 @@
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#bottom">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
               <a href="./public/files/Currículum Vitae.pdf">Curriculum</a>
@@ -30,13 +30,13 @@
       </header>
       <main>
         <section class="section0" id="home">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam, molestiae ex enim obcaecati cupiditate rerum suscipit nihil! Ratione iusto numquam vel perferendis quae natus facere eum debitis incidunt officiis sit repellendus, et dolorem reprehenderit error dignissimos culpa, architecto doloribus illo aut! Praesentium, accusantium iste! Reprehenderit quis repellat fuga debitis ex vitae explicabo harum blanditiis numquam, expedita deserunt dolorum commodi tempora est iusto vel fugiat error atque quaerat ullam labore! Perferendis provident sunt totam neque qui numquam, blanditiis voluptas recusandae repudiandae minima veritatis delectus deserunt doloribus placeat quis magni harum iure dicta esse ipsa architecto consequuntur quae accusamus. Velit, corporis!</p>
-          
+          <div class="about">
+            <h1>Hola, soy Sergio</h1>
+            <h1>Full-Stack Web Developer<span>&#160;</span></h1>
+          </div>
         </section>
         <section class="section1" id="about">
-            <div class="col-12 about">
-              <h1>Hola, soy Sergio</h1>
-              <h1>Full-Stack Web Developer</h1>
+            <div class="about">
               <p>
                 Me presento, soy un chico de Málaga apasionado por la programación, me inicié desde muy pequeño con un Spectrum que tenía mi padre, un teclado de color negro que se conectaba a un televisor donde podías escribir en Basic y grabar o cargar programas a través de una cinta de cassete.
                 También viví la llegada de internet a los hogares a través del TPR, había que esperar para conectarte a internet a un horario específico.
@@ -51,7 +51,29 @@
         </section>
         <section class="section2" id="projects">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam, molestiae ex enim obcaecati cupiditate rerum suscipit nihil! Ratione iusto numquam vel perferendis quae natus facere eum debitis incidunt officiis sit repellendus, et dolorem reprehenderit error dignissimos culpa, architecto doloribus illo aut! Praesentium, accusantium iste! Reprehenderit quis repellat fuga debitis ex vitae explicabo harum blanditiis numquam, expedita deserunt dolorum commodi tempora est iusto vel fugiat error atque quaerat ullam labore! Perferendis provident sunt totam neque qui numquam, blanditiis voluptas recusandae repudiandae minima veritatis delectus deserunt doloribus placeat quis magni harum iure dicta esse ipsa architecto consequuntur quae accusamus. Velit, corporis!</p>
+        </section>
+        <section class="section3" id="contact">
+          <div>
+            <h2>Contáctame</h2>
+            <form action="enviar_email.php" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
           
+              <br>
+          
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <br>
+          
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+          
+              <br>
+          
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
         </section>
         <video autoplay muted loop>
           <source src="./public/images/moon_-_37363 (720p).mp4" type="video/mp4">
