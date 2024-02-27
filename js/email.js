@@ -15,3 +15,7 @@ document.getElementById('formularioContacto').addEventListener('submit', functio
   //Abrir el enlace 'mailto'
   window.location.href = mailtoLink;
 });
+
+limpiarForm = () => {
+  document.getElementById('formularioContacto').reset();
+}
