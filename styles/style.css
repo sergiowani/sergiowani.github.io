@@ -51,8 +51,8 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   z-index:-100;
   padding: 0;
 }
