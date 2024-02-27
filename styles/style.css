@@ -112,7 +112,8 @@ video {
 
 .section3 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding-top: 56px;
   flex: 0 0 100%;
   /* width: 100vw; */
