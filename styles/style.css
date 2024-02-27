@@ -75,6 +75,7 @@ video {
   flex: 0 0 100%;
   /* width: 100vw; */
   height: 100vh;
+  padding-top: 56px;
   /* object-fit: cover; */
   scroll-snap-align: center;
 }
