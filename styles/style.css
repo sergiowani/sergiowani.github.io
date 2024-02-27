@@ -11,7 +11,7 @@ a {
 }
 
 body {
-  background-image: url(../public/images/landsmann-P00EuDC9fWA-unsplash.jpg);
+  /* background-image: url(../public/images/landsmann-P00EuDC9fWA-unsplash.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,9 +21,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  background-color: #a1eebda6;
-  position: fixed;
-  top: 0;
 }
 
 ul {
@@ -43,12 +40,22 @@ ul > li > a {
   border: 1px solid #000;
   padding: 5px;
   border-radius: 15px;
-  background-color: #7BD3EA;
+  background-color: #7bd4ea9d;
   width: 100px;
 }
 
 main {
   padding-top: 56px
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+  padding: 0;
 }
 
 /* clases */
@@ -64,7 +71,7 @@ main {
 }
 
 .about {
-  background-color: #7BD3EA;
+  background-color: #7bd4ea9d;
   width: 40%;
   padding: 30px;
   border-radius: 15px;
