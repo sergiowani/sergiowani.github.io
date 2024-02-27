@@ -69,6 +69,8 @@ video {
 
 input, textarea, button {
   color: #000;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 /* clases */
@@ -92,6 +94,7 @@ input, textarea, button {
   flex: 0 0 100%;
   /* width: 100vw; */
   height: 100vh;
+  padding-top: 56px;
   /* object-fit: cover; */
   scroll-snap-align: center;
 }
@@ -109,7 +112,7 @@ input, textarea, button {
 
 .section2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 56px;
   flex: 0 0 100%;
   /* width: 100vw; */
@@ -121,7 +124,6 @@ input, textarea, button {
 .section3 {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 56px;
   flex: 0 0 100%;
   /* width: 100vw; */
@@ -130,4 +132,11 @@ input, textarea, button {
   scroll-snap-align: center;
 }
 
+.divForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px 0;
+  width: 300px;
+}
 
