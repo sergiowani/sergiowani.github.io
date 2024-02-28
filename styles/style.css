@@ -1,4 +1,4 @@
-/* generales */
+/* generals */
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -120,6 +120,14 @@ video {
   border-radius: 40px;
 }
 
+/* gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 /* form */
 input, textarea, button {
   color: #000;
@@ -148,23 +156,23 @@ input, textarea, button {
   padding: 10px;
 }
 
-/* título */
+/* title */
 h1 {
   font-size: 3rem;
 }
 
-/* imagen nombre */
+/* name */
 .nombre {
   width: 100%;
 }
 
-/* párrafos */
+/* paragraph */
 p {
   font-size: 1.3rem;
   width: 100%;
 }
 
-/* efecto título */
+/* title effect */
 .split-text {
   display: inline-block;
   z-index: 2;
@@ -199,10 +207,6 @@ p {
 .split-text span:nth-child(4) { animation-delay: 0.8s; }
 
 @media screen and (max-width: 768px) {
-  body {
-    orientation: portrait;
-  }
-  
   /* nav */
   nav {
     background-color: #6e6e6e;
@@ -258,13 +262,13 @@ p {
     padding: 30px 8px;
   }
 
-  /* título */
+  /* title */
   h1 {
     font-size: 2.2rem;
     margin: 50px 0;
   }
 
-  /* párrafo */
+  /* paragraph */
   p {
     text-align: center;
     font-size: 1rem;
@@ -285,6 +289,11 @@ p {
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+
+  /* gallery */
+  .img-gallery {
+    width: 200px;
   }
 
 }
