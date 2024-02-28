@@ -70,7 +70,6 @@ ul > li > a {
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 
 /* main */
@@ -126,6 +125,16 @@ video {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+.img-gallery {
+  border-radius: 15px;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.img-gallery:hover {
+  filter: grayscale(0%);
 }
 
 /* form */

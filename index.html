@@ -6,6 +6,7 @@
     <title>Sergio García</title>
     <script src="./js/email.js" defer></script>
     <script src="./js/navBar.js"></script>
+    <script src="./js/color.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
@@ -15,19 +16,33 @@
         <nav>
           <ul class="nav-links">
             <li>
-              <a href="#home">Inicio</a>
+              <a 
+                href="#home" 
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: #FFFFFF;"
+              >Inicio</a>
             </li>
             <li>
-              <a href="#about">Sobre mí</a>
+              <a 
+                href="#about" 
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: #FFFFFF;"
+              >Sobre mí</a>
             </li>
             <li>
-              <a href="#projects">Proyectos</a>
+              <a 
+                href="#projects" 
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: #FFFFFF;"
+              >Proyectos</a>
             </li>
             <li>
-              <a href="#contact">Contacto</a>
+              <a 
+                href="#contact" 
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: #FFFFFF;"
+              >Contacto</a>
             </li>
             <li>
-              <a href="./public/files/Currículum Vitae.pdf">Curriculum</a>
+              <a 
+                href="./public/files/Currículum Vitae.pdf" onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: #FFFFFF;"
+              >Curriculum</a>
             </li>
           </ul>
           <div class="burger">&#9776;</div>
@@ -38,9 +53,13 @@
         <!-- section -->
         <section class="section" id="home">
           <div class="panel">
-            <h1 class="split-text"><span>Full</span> <span>Stack</span> </h1>
+            <h1 class="split-text">
+              <span>Full</span> <span>Stack</span> 
+            </h1>
             <img class="nombre" src="./public/images/nombre.png" alt="nombre">
-            <h1 class="split-text"><span>Web</span> <span>Developer</span></h1>
+            <h1 class="split-text">
+              <span>Web</span> <span>Developer</span>
+            </h1>
           </div>
         </section>
         <!-- section -->
@@ -63,13 +82,27 @@
         <!-- section -->
         <section class="section" id="projects">
           <div class="gallery">
-            <img class="img-gallery" src="./public/images/7.png" alt="img">
-            <img class="img-gallery" src="./public/images/6.png" alt="img">
-            <img class="img-gallery" src="./public/images/5.png" alt="img">
-            <img class="img-gallery" src="./public/images/4.png" alt="img">
-            <img class="img-gallery" src="./public/images/3.png" alt="img">
-            <img class="img-gallery" src="./public/images/2.png" alt="img">
-            <img class="img-gallery" src="./public/images/1.png" alt="img">
+            <a href="https://www.linkedin.com/posts/sergiowani_este-ejercicio-es-una-aplicaci%C3%B3n-web-que-activity-7166911555555561472-JXu-?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/7.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_react-socratech-activity-7162210979408248832-QIpw?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/6.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_proyecto-de-mitad-de-bootcamp-de-sergio-garc%C3%ADa-activity-7158194128898412544-mom0?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/5.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_hola-os-quiero-presentar-otra-calculadora-activity-7156547976486600705-lll6?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/4.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_hola-os-dejo-un-video-de-mi-calculadora-activity-7153156445574770688-NwXY?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/3.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_bootstrap-sass-activity-7146531745146855424-2_ui?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/2.png" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/posts/sergiowani_primera-maquetaci%C3%B3n-con-bootstrap-y-sass-activity-7146261566387023873-Oe9C?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img class="img-gallery" src="./public/images/1.png" alt="img">
+            </a>
           </div>
         </section>
         <!-- section -->
