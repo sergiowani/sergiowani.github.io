@@ -158,6 +158,10 @@ input, textarea, button {
   gap: 10px;
 }
 
+.correo {
+  display: none;
+}
+
 .button {
   color: rgb(255, 255, 255);
   background-color: #333333;
@@ -233,6 +237,18 @@ p {
   }
 }
 
+@media screen and (max-width: 1450px) and ( orientation: landscape ) {
+  /* panel */
+ .panel {
+   width: 50%;
+   height: 70%;
+ }
+
+ .label {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1160px) {
   /* panel */
  .panel {
@@ -247,6 +263,108 @@ p {
     width: 50%;
     height: 70%;
   }
+}
+
+@media screen and (max-width: 950px) and ( orientation: landscape ) {
+  /* name */
+  .nombre {
+    width: 50%;
+  }
+
+  /* title */
+  .split-text{
+    margin: 0;
+  }
+  span {
+    font-size: 2rem;
+  }
+
+  /* nav */
+  nav {
+    justify-content: end;
+    background-color: #6e6e6e;
+    padding: 5px 0;
+    z-index: 3;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #6e6e6e;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links.show li {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #333333;
+    border-radius: 15px
+  }
+
+  ul {
+    padding-right: 40px;
+  }
+  
+  ul > li > a {
+    width: 100%;
+  }
+
+  /* panel */
+  .panel {
+    width: 90%;
+    height: 100% !important;
+    padding: 30px 8px;
+  }
+
+  /* paragraph */
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* form */
+  form {
+    display: none;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .correo {
+    display: block;
+  }
+
+  .botonera {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* gallery */
+  .img-gallery {
+    width: 120px !important;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
