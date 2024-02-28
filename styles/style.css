@@ -201,7 +201,7 @@ p {
 @media screen and (max-width: 768px) {
   /* nav */
   nav {
-    background-color: #333333;
+    background-color: #6e6e6e;
     padding: 10px 0;
     z-index: 3;
   }
@@ -213,7 +213,7 @@ p {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333333;
+    background-color: #6e6e6e;
   }
 
   .nav-links.show {
@@ -236,6 +236,7 @@ p {
     padding: 5px 10px;
     margin-right: 10px;
     background-color: #333333;
+    border-radius: 15px
   }
 
   ul {
