@@ -262,7 +262,7 @@ p {
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and ( orientation: portrait) {
   /* nav */
   nav {
     justify-content: end;
