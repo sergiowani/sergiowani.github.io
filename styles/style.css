@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'DancingScript-VariableFont_wght';
+  src: url(./font/DancingScript-VariableFont_wght.ttf);
+}
+
 /* generales */
 * {
   box-sizing: border-box;
@@ -10,15 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
 body {
   overflow: hidden;
 }
 
+/* nav */
 nav {
   display: flex;
   justify-content: end;
@@ -27,6 +28,27 @@ nav {
   padding: 20px 0;
   position: fixed;
   top: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.burger {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
 }
 
 ul {
@@ -50,6 +72,12 @@ ul > li > a {
   width: 100px;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* main */
 main {
   padding-top: 56px;
   display: flex;
@@ -71,14 +99,8 @@ video {
   padding: 0;
 }
 
-input, textarea, button {
-  color: #000;
-  border-radius: 15px;
-  padding: 5px;
-}
-
-/* clases */
-.section0 {
+/* sections */
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,52 +111,24 @@ input, textarea, button {
   scroll-snap-align: start;
 }
 
-
-.section1 {
+/* panel */
+.panel {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  flex: 0 0 100%;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 56px;
-  scroll-snap-align: start;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(to bottom, #333333, #aaaaaa);
+  background-color: #333333;
   width: 40%;
   height: 60%;
   padding: 30px;
   border-radius: 40px;
 }
 
-.section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 56px;
-  flex: 0 0 100%;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
-.section3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 56px;
-  flex: 0 0 100%;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
+/* form */
+input, textarea, button {
+  color: #000;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .divForm {
@@ -145,18 +139,6 @@ input, textarea, button {
   width: 300px;
 }
 
-.sectionV {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 56px;
-  flex: 0 0 100%;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
 .button {
   color: rgb(255, 255, 255);
   background-color: #333333;
@@ -164,32 +146,59 @@ input, textarea, button {
   padding: 10px;
 }
 
-/* nav */
-.nav-links {
-  list-style: none;
-  display: flex;
+/* título */
+h1 {
+  font-size: 3rem;
 }
 
-.nav-links li {
-  margin-right: 20px;
+/* imagen nombre */
+.nombre {
+  width: 100%;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+/* párrafos */
+p {
+  font-family: 'DancingScript-VariableFont_wght';
+  font-size: 1.5rem;
+  width: 100%;
 }
 
-.burger {
-  font-size: 1.5em;
-  cursor: pointer;
-  display: none;
+/* efecto título */
+.split-text {
+  display: inline-block;
 }
 
+.split-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1em);
+  animation: appear 10s ease-in-out forwards infinite;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+}
+
+.split-text span:nth-child(1) { animation-delay: 0.2s; }
+.split-text span:nth-child(2) { animation-delay: 0.4s; }
+.split-text span:nth-child(3) { animation-delay: 0.6s; }
+.split-text span:nth-child(4) { animation-delay: 0.8s; }
 
 @media screen and (max-width: 768px) {
+  /* nav */
   nav {
-    background-color: #333;
+    background-color: #333333;
   }
   
   .nav-links {
@@ -199,7 +208,7 @@ input, textarea, button {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #333333;
   }
 
   .nav-links.show {
@@ -221,6 +230,6 @@ input, textarea, button {
     display: block;
     padding: 5px 10px;
     margin-right: 10px;
-    background-color: #333;
+    background-color: #333333;
   }
 }
