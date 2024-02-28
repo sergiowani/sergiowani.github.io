@@ -1,17 +1,15 @@
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+function getRandomColorRGB() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
 }
 
 function changeColor(element) {
-  const randomColor = getRandomColor();
+  const randomColor = getRandomColorRGB();
   element.style.color = randomColor;
 }
 
 function resetColor(element) {
-  element.style.color = ''; // Restaura el color original al dejar de hacer hover
+  element.style.color = '';
 }
