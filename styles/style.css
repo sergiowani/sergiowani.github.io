@@ -199,8 +199,9 @@ p {
 .split-text span:nth-child(4) { animation-delay: 0.8s; }
 
 @media screen and (max-width: 768px) {
-  body, video {
-    overflow: hidden !important;
+  video {
+    width: auto;
+    height: auto;
   }
 
   /* nav */
