@@ -238,6 +238,14 @@ p {
     background-color: #333333;
   }
 
+  ul {
+    padding-right: 40px;
+  }
+  
+  ul > li > a {
+    width: 100%;
+  }
+
   /* panel */
   .panel {
     width: 90%;
