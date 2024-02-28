@@ -3,12 +3,16 @@
   box-sizing: border-box;
   font-family: sans-serif;
   margin: 0;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -42,7 +46,7 @@ ul > li > a {
   border: 1px solid #000;
   padding: 10px;
   border-radius: 15px;
-  background-color: #7bd4ea9d;
+  background-color: #333333;
   width: 100px;
 }
 
@@ -79,23 +83,23 @@ input, textarea, button {
   justify-content: center;
   align-items: center;
   flex: 0 0 100%;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   padding-top: 56px;
-  /* object-fit: cover; */
   scroll-snap-align: center;
+  
 }
 
 
 .section1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 0 0 100%;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   padding-top: 56px;
-  /* object-fit: cover; */
   scroll-snap-align: center;
 }
 
@@ -103,8 +107,8 @@ input, textarea, button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7bd4ea9d;
-  width: 50%;
+  background: linear-gradient(to bottom, #333333, #aaaaaa);
+  width: 40%;
   height: 60%;
   padding: 30px;
   border-radius: 15px;
@@ -112,23 +116,25 @@ input, textarea, button {
 
 .section2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 56px;
   flex: 0 0 100%;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
-  object-fit: cover;
   scroll-snap-align: center;
 }
 
 .section3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 56px;
   flex: 0 0 100%;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
-  object-fit: cover;
   scroll-snap-align: center;
 }
 
@@ -140,3 +146,21 @@ input, textarea, button {
   width: 300px;
 }
 
+.sectionV {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 56px;
+  flex: 0 0 100%;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  background-color: #333333;
+  width: 100px;
+  padding: 10px;
+}
