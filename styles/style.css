@@ -266,10 +266,14 @@ p {
 }
 
 @media screen and (max-width: 950px) and ( orientation: landscape ) {
+  /* ref-vid */
+  .ref-vid {
+    color: #000;
+  }
   /* main */
   main {
-  overflow-y: scroll;
-  scroll-snap-align: none;
+    overflow-y: scroll;
+    scroll-snap-align: none !important;
   }
   /* name */
   .nombre {
