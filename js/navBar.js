@@ -15,20 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navListItems.forEach(function (item) {
     item.addEventListener('click', function (event) {
-      // Prevenir el comportamiento predeterminado del enlace
-      event.preventDefault();
-      
       // Obtener el hash del enlace
       let hash = item.querySelector('a').getAttribute('href');
 
-      // Cerrar el menú
-      navLinks.classList.remove('show');
+      // Verificar si el enlace es interno o externo
+      if (!hash.startsWith('http')) {
+        // Prevenir el comportamiento predeterminado del enlace interno
+        event.preventDefault();
 
-      // Ir directamente a la sección correspondiente sin scroll
-      if (hash && document.querySelector(hash)) {
-        document.querySelector(hash).scrollIntoView({
-          behavior: 'auto'
-        });
+        // Cerrar el menú
+        navLinks.classList.remove('show');
+
+        // Ir directamente a la sección correspondiente sin scroll
+        if (hash && document.querySelector(hash)) {
+          document.querySelector(hash).scrollIntoView({
+            behavior: 'auto'
+          });
+        }
       }
     });
   });
