@@ -19,16 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
       let hash = item.querySelector('a').getAttribute('href');
 
       // Verificar si el enlace es interno o externo
-      if (!hash.startsWith('http')) {
+      if (hash && hash.startsWith('#')) {
         // Prevenir el comportamiento predeterminado del enlace interno
         event.preventDefault();
 
         // Cerrar el menú
         navLinks.classList.remove('show');
 
+        // Obtener el ID del elemento al que se quiere desplazar
+        let targetId = hash.substring(1); // Eliminar el '#' del inicio
+
         // Ir directamente a la sección correspondiente sin scroll
-        if (hash && document.querySelector(hash)) {
-          document.querySelector(hash).scrollIntoView({
+        let targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
             behavior: 'auto'
           });
         }
