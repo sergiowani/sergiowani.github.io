@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /js/
+Disallow: /public/icons/
+Disallow: /public/images/
+
+Sitemap: https://sergiowani.github.io/sitemap.xml
