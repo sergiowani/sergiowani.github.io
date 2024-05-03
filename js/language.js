@@ -7,9 +7,11 @@ function toggleLanguage() {
   if (currentLanguage === 'es') {
       document.documentElement.lang = 'en'; // Cambiar a inglés
       updateTexts(textsEN); // Cargar textos en inglés
+      updatePlaceholders(textsEN); // Actualizar placeholders en inglés
   } else {
       document.documentElement.lang = 'es'; // Cambiar a español
       updateTexts(textsES); // Cargar textos en español
+      updatePlaceholders(textsES); // Actualizar placeholders en español
   }
 }
 
@@ -37,6 +39,14 @@ function updateTexts(texts) {
   /* lang */
   document.getElementById("toggleLanguageButton").innerText = texts.lang.lang;
 }
+
+// Actualizar el contenido de los elementos con los placeholder correspondientes
+function updatePlaceholders(texts) {
+  document.getElementById("nombre").placeholder = texts.contact.name;
+  document.getElementById("asunto").placeholder = texts.contact.subject;
+  document.getElementById("mensaje").placeholder = texts.contact.message;
+}
+
 
 // Agregar un evento al botón para cambiar de idioma
 document.getElementById("toggleLanguageButton").addEventListener("click", toggleLanguage);
