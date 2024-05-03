@@ -11,6 +11,9 @@
     <script src="./js/email.js" defer></script>
     <script src="./js/navBar.js"></script>
     <script src="./js/color.js"></script>
+    <script src="./i18n/es.js"></script>
+    <script src="./i18n/en.js"></script>
+    <script src="./js/language.js" defer></script>
     <title>Sergio García</title>
   </head>
   <body>
@@ -49,13 +52,21 @@
             </li>
             <li>
               <a 
-                href="https://github.com/sergiowani" onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: rgb(255, 255, 255);"
+                href="https://github.com/sergiowani"
+                id="link-git"
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: rgb(255, 255, 255);"
               >Mi GitHub</a>
             </li>
             <li>
               <a 
                 href="./public/files/Currículum Vitae.pdf" onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: rgb(255, 255, 255);"
               >Curriculum</a>
+            </li>
+            <li>
+              <button 
+                id="toggleLanguageButton"
+                onmouseover="changeColor(this)" onmouseout="resetColor(this)" style="color: rgb(255, 255, 255);"
+                >English</button>
             </li>
           </ul>
           <div class="burger">&#9776;</div>
@@ -78,16 +89,16 @@
         <!-- section -->
         <section class="section" id="about">
             <div class="panel">
-              <p>
+              <p id="intro1">
                 Me presento, soy un chico de Málaga apasionado por la programación, me inicié desde muy pequeño con un Spectrum que tenía mi padre, un teclado de color negro que se conectaba a un televisor donde podías escribir en Basic y grabar o cargar programas a través de una cinta de cassete.
               </p>
-              <p>
+              <p id="intro2">
                 También viví la llegada de internet a los hogares a través del TPR, había que esperar para conectarte a internet a un horario específico.
               </p>
-              <p>
+              <p id="intro3">
                 Durante muchos años me he dedicado a trabajar en hoteles y durante mi tiempo libre estudié a distancia el FP de diseño de aplicaciones web pero seguía en un bucle de trabajo-casa casa-trabajo; al pasar años en ese bucle decidí dar un giro a mi vida profesional y me inscribí en un Bootcamp full stack web developer de la mano de Socratech, en ese momento supe que desde pequeño ya sabía lo que me gustaba pero por circunstancias de la vida no seguí ese camino. 
               </p>
-              <p>
+              <p id="intro4">
                 Ahora puedo decir fuerte y claro que la programación es mi vocación.
               </p>
             </div>
@@ -127,12 +138,12 @@
         <!-- section -->
         <section class="section" id="contact">
           <div class="panel">
-            <h2>Contáctame</h2>
+            <h2 id="contactMe">Contáctame</h2>
             <span class="correo">sergiowani@outlook.es</span>
             <!-- form -->
             <form id="formularioContacto">
               <div class="divForm">
-                <label for="nombre" class="label">Nombre</label>
+                <label for="nombre" class="label" id="name">Nombre</label>
                 <input 
                   type="text" 
                   id="nombre" 
@@ -143,7 +154,7 @@
               </div>
 
               <div class="divForm">
-                <label for="asunto" class="label">Asunto</label>
+                <label for="asunto" class="label" id="subject">Asunto</label>
                 <input 
                   type="text" 
                   id="asunto" 
@@ -154,7 +165,7 @@
               </div>
           
               <div class="divForm">
-                <label for="mensaje" class="label">Mensaje</label>
+                <label for="mensaje" class="label" id="message">Mensaje</label>
                 <textarea 
                   id="mensaje" 
                   name="mensaje" 
@@ -167,8 +178,8 @@
               </div>
 
               <div class="botonera">
-                <button class="button" type="submit" value="Enviar">Enviar</button>
-                <button class="button" type="button" value="Limpiar" onclick="limpiarForm()">Limpiar</button>
+                <button class="button" type="submit" value="Enviar" id="send">Enviar</button>
+                <button class="button" type="button" value="Limpiar" id="clear" onclick="limpiarForm()">Limpiar</button>
               </div>
             </form>
           </div>

@@ -35,7 +35,8 @@ nav {
   margin-right: 20px;
 }
 
-.nav-links a {
+.nav-links a,
+#toggleLanguageButton {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -56,7 +57,8 @@ ul {
   margin: 0;
 }
 
-ul > li > a {
+ul > li > a,
+#toggleLanguageButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,11 +67,15 @@ ul > li > a {
   padding: 10px;
   border-radius: 15px;
   background-color: #333333;
-  width: 100px;
+  width: 105px;
 }
 
 a {
   text-decoration: none;
+}
+
+#toggleLanguageButton {
+  font-size: 1rem;
 }
 
 /* main */
@@ -265,7 +271,8 @@ p {
   }
 }
 
-@media screen and (max-width: 950px) and ( orientation: landscape ) {
+/* @media screen and (max-width: 950px) and ( orientation: landscape ) { */
+@media screen and (max-width: 1000px) and ( orientation: landscape ) {
   /* ref-vid */
   .ref-vid {
     color: #000;
@@ -299,7 +306,8 @@ p {
     gap: 0;
   }
 
-  ul > li > a {
+  ul > li > a,
+  #toggleLanguageButton {
     padding: 5px;
   }
   
@@ -340,7 +348,8 @@ p {
     padding-right: 40px;
   }
   
-  ul > li > a {
+  ul > li > a,
+  #toggleLanguageButton {
     width: 100%;
   }
 
@@ -396,7 +405,8 @@ p {
 }
 }
 
-@media screen and (max-width: 768px) and ( orientation: portrait) {
+/* @media screen and (max-width: 768px) and ( orientation: portrait) { */
+@media screen and (max-width: 1000px) and ( orientation: portrait) {
   /* nav */
   nav {
     justify-content: end;
@@ -442,7 +452,8 @@ p {
     padding-right: 40px;
   }
   
-  ul > li > a {
+  ul > li > a,
+  #toggleLanguageButton {
     width: 100%;
   }
 
