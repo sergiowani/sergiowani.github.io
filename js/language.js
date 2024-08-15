@@ -25,7 +25,7 @@ function updateTexts(texts) {
   document.getElementById("link-contact").innerText = texts.home.contact;
   document.getElementById("link-git").innerText = texts.home.git;
   /* about */
-  document.getElementById("intro").innerText = texts.about.intro1;
+  document.getElementById("intro").innerText = texts.about.intro;
   /* contact */
   document.getElementById("contactMe").innerText = texts.contact.contactMe;
   document.getElementById("name").innerText = texts.contact.name;
