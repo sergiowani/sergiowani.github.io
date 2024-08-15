@@ -7,10 +7,9 @@ const textsEN = {
     git: "My GitHub",
   },
   about: {
-    intro1: "Let me introduce myself, I'm a guy from Malaga passionate about programming. I started at a very young age with a Spectrum that my father had, a black keyboard that connected to a TV where you could write in Basic and record or load programs through a cassette tape.",
-    intro2: "I also experienced the arrival of internet to homes through the TPR, where you had to wait to connect to the internet at specific times.",
-    intro3: "For many years, I worked in hotels and during my free time, I studied web application design remotely, but I was still stuck in a loop of work-home-home-work. After years in that loop, I decided to make a change in my professional life and enrolled in a Full Stack Web Developer Bootcamp with Socratech. At that moment, I realized that I had known what I liked since I was a child, but due to life circumstances, I didn't pursue that path.",
-    intro4: "Now I can say loud and clear that programming is my vocation."
+    intro1: "I am a full-stack web developer with experience in JavaScript, React, Node.js, and Express.",
+    intro2: "Specializing in creating dynamic and scalable web applications, I combine advanced front-end and back-end skills.",
+    intro3: "After completing my training at the Socratech BootCamp, I am ready to apply my knowledge and provide immediate value."
   },
   contact: {
     contactMe: "Contact me",
