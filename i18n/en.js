@@ -7,7 +7,7 @@ const textsEN = {
     git: "My GitHub",
   },
   about: {
-    intro: "I am a full-stack web developer with experience in JavaScript, React, Node.js, and Express. Specializing in creating dynamic and scalable web applications, I combine advanced front-end and back-end skills. After completing my training at the Socratech BootCamp, I am ready to apply my knowledge and provide immediate value."
+    intro: "I am a full-stack web developer with experience in JavaScript, React, Node.js, and Express. Specializing in creating dynamic and scalable web applications, I combine advanced front-end and back-end skills. After completing my training at the Socratech BootCamp, I am ready to apply my knowledge and provide immediate value.",
   },
   contact: {
     contactMe: "Contact me",
