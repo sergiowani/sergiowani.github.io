@@ -68,6 +68,7 @@ ul > li > a,
   border-radius: 15px;
   background-color: #333333;
   width: 105px;
+  cursor: pointer;
 }
 
 a {
