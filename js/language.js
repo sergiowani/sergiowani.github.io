@@ -22,6 +22,7 @@ function updateTexts(texts) {
   document.getElementById("link-home").innerText = texts.home.home;
   document.getElementById("link-about").innerText = texts.home.about;
   document.getElementById("link-projects").innerText = texts.home.projects;
+  document.getElementById("link-badges").innerText = texts.home.badges;
   document.getElementById("link-contact").innerText = texts.home.contact;
   document.getElementById("link-git").innerText = texts.home.git;
   /* about */

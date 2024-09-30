@@ -144,6 +144,16 @@ video {
   filter: grayscale(0%);
 }
 
+.badge-gallery {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-gallery:hover {
+  transform: perspective(1000px) rotateY(15deg) rotateX(10deg);
+}
+
 /* form */
 input, textarea, button {
   color: #000;
@@ -495,8 +505,8 @@ p {
   }
 
   /* gallery */
-  .img-gallery {
+  .img-gallery, 
+  .badge-gallery {
     width: 150px;
   }
-
 }
