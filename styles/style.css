@@ -412,7 +412,7 @@ p {
 
  /* gallery */
  .img-gallery {
-  width: 200px;
+  width: 150px;
 }
 }
 
@@ -507,6 +507,6 @@ p {
   /* gallery */
   .img-gallery, 
   .badge-gallery {
-    width: 100px;
+    width: 150px;
   }
 }
