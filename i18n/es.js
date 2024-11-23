@@ -3,7 +3,6 @@ const textsES = {
     home: "Inicio",
     about: "Sobre mí",
     projects: "Proyectos",
-    badges: "Insignias",
     contact: "Contacto",
     git: "Mi GitHub",
   },

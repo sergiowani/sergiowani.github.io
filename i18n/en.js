@@ -3,7 +3,6 @@ const textsEN = {
     home: "Home",
     about: "About me",
     projects: "Projects",
-    badges: "Badges",
     contact: "Contact",
     git: "My GitHub",
   },
